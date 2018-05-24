@@ -84,7 +84,7 @@ This step will generate the trimmed files under the same directory as the input 
 `--job_AT`: Optional parameter. Number of process for adapter trimming step, the default is 5;
 
 
-**Example**
+**_Example_**
 
 ##adapter_trimming
 
@@ -112,7 +112,7 @@ This step will generate the aligned .bam files as well as a metaCloudbamfiles wh
 `--job_align`: Optional parameter. Number of process for alignment, the default is 3. Please pay attention to the **memory**, as the demand for the memory is considerably high;
 
 
-**Example**
+**_Example_**
 
 ##alignment
 
@@ -146,7 +146,7 @@ This step will generate the filtered .bam file as well as the metagotCloudbamfil
 `--run`: The run number, e.g. **_--run 1789_**;
 
 
-**Example**
+**_Example_**
 
 ##filtering
 
