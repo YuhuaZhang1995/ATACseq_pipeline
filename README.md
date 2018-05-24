@@ -11,7 +11,7 @@ python command.py <config_file>
 1. Procedures to be involved, start with **##**, e.g. **_##alignment_**
 2. Parameters for the corresponding procedure, start with **--**,e.g. **_--batch 14_**
 
-### A quick start
+## A quick start
 In this case, the program will go through the whole procedure, and generate the intermediate files at each step and final results. The user need to specify **at least** the required parameters.
 
 #### Required parameter
@@ -46,23 +46,31 @@ In this case, the program will go through the whole procedure, and generate the 
 #### **A brief example of config_file**
 
 --entire_output .
+
 --batch 14
+
 --run 1789
 
 ##adapter_trimming
+
 --job_AT 5
+
 --seq_data /pathway/to/seq/data
+
 --core_info_file /core/info/file.txt
 
 ##alignment
+
 --job_align 5
 
 ##filtering
+
 --job_filter 5
+
 --intermediate_file Yes
 
 
-### Separate each step
+## Separate each step
 If the user prefer to run each procedure step by step and specify the output pathway for the intermediate files, just make the config_file contains only one operation each time.
 
 #### Adapter_trimming
@@ -77,8 +85,11 @@ If the user prefer to run each procedure step by step and specify the output pat
 **Example**
 
 ##adapter_trimming
+
 --core_info_file /core/info.txt
+
 --job_AT 5
+
 --seq_data /pathway/to/seq/data
 
 
@@ -100,11 +111,17 @@ If the user prefer to run each procedure step by step and specify the output pat
 **Example**
 
 ##alignment
+
 --job_align 5
+
 --trimmed_file /pathway/to/adapter/trimmed/file
+
 --out_conf /directory/to/store/config/index/files/for/gotcloud
+
 --out_bam /output/directory/to/store/generated/bam/file
+
 --batch 14
+
 --run 1789
 
 
@@ -122,9 +139,13 @@ If the user prefer to run each procedure step by step and specify the output pat
 **Example**
 
 ##filtering
+
 --job_filter 5
+
 --out_proc_bam /pathway
+
 --in_bam /pathway/metagotCloudbamfiles_Batch14_Run1789
+
 --intermediate_file Yes
 
 
