@@ -75,6 +75,8 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 #### Adapter_trimming
 
+This step will generate the trimmed files under the same directory as the input sequence data, as well as the extracted information from the input core info file(sampleID, cell line description and patient ID). 
+
 `--core_info_file`: The core information files, **_e.g. /pathway/to/file/Batch14_Run_1789_elder.txt_**;
 
 `--seq_data`: Pathway to the sequence data, end with Run_XXX, no '/' included at the end; the program will search for '/elder' folder and find the sequence data, **_e.g. --seq_data /pathway/to/data/Run_XXX_**
@@ -94,6 +96,8 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 
 #### Alignment
+
+This step will generate the aligned .bam files as well as a metaCloudbamfiles which will be used for the filtering.
 
 `--trimmed_file`: Pathway to the trimmed files, end with Run_XXX, no '/' included at the end; the program will search for '/elder' folder and find the sequence data;
 
@@ -126,6 +130,8 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 
 #### Filtering
+
+This step will generate the filtered .bam file as well as the metagotCloudbamfiles which will be used in the plotting step. Whether to keep the intermediate files is up to the users.
 
 `--in_bam`: Pathway to the metagotCloud files. e.g. **_--in_bam /pathway_**;
 
