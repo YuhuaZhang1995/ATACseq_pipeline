@@ -137,13 +137,14 @@ This step will generate the filtered .bam file as well as the metagotCloudbamfil
 
 `--out_proc_bam`: Output dir for processed .bam files;
 
+`--batch`: The batch number, e.g. **_--batch 14_**;
+
+`--run`: The run number, e.g. **_--run 1789_**;
+
 `--job_filter`: Optional parameter. Number of process for filtering, the default is 5;
 
 `--intermediate_file`: Optional parameter. Whether to keep the intermediate .bam files generated in the filtering step, the default is no. e.g. **_--intermediate_file Yes_**
 
-`--batch`: The batch number, e.g. **_--batch 14_**;
-
-`--run`: The run number, e.g. **_--run 1789_**;
 
 
 **_Example_**
