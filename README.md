@@ -8,11 +8,11 @@ python command.py <config_file>
 
 ## Component of config_file:
 
-1. Procedures to be involved, starts with **##**, e.g. **_##alignment_**
-2. Parameters for the corresponding procedure, starts with **--**,e.g. **_--batch 14_**
+1. Procedures to be involved, start with **##**, e.g. **_##alignment_**
+2. Parameters for the corresponding procedure, start with **--**,e.g. **_--batch 14_**
 
 ### A quick start
-In this case, the program will go through the whole procedure, and generate the intermediate files at each step and final results stored. The user need to specify **at least** the required parameters.
+In this case, the program will go through the whole procedure, and generate the intermediate files at each step and final results. The user need to specify **at least** the required parameters.
 
 #### Required parameter
 
@@ -42,7 +42,8 @@ In this case, the program will go through the whole procedure, and generate the 
 
 `--intermediate_file`: Whether to keep the intermediate .bam files generated in the filtering step, the default is no. e.g. **_--intermediate_file Yes_**
 
-#### A brief example of config_file
+
+#### **A brief example of config_file**
 
 --entire_output .
 --batch 14
@@ -60,6 +61,7 @@ In this case, the program will go through the whole procedure, and generate the 
 --job_filter 5
 --intermediate_file Yes
 
+
 ### Separate each step
 If the user prefer to run each procedure step by step and specify the output pathway for the intermediate files, just make the config_file contains only one operation each time.
 
@@ -71,12 +73,14 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 `--job_AT`: Optional parameter. Number of process for adapter trimming step, the default is 5;
 
+
 **Example**
 
 ##adapter_trimming
 --core_info_file /core/info.txt
 --job_AT 5
 --seq_data /pathway/to/seq/data
+
 
 #### Alignment
 
@@ -92,6 +96,7 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 `--job_align`: Optional parameter. Number of process for alignment, the default is 3. Please pay attention to the **memory**, as the demand for the memory is considerably high;
 
+
 **Example**
 
 ##alignment
@@ -102,6 +107,7 @@ If the user prefer to run each procedure step by step and specify the output pat
 --batch 14
 --run 1789
 
+
 #### Filtering
 
 `--in_bam`: List of bam files. e.g. **_--in_bam /pathway/metagotCloudbamfiles_Batch14_Run1789_**;
@@ -111,6 +117,7 @@ If the user prefer to run each procedure step by step and specify the output pat
 `--job_filter`: Optional parameter. Number of process for filtering, the default is 5;
 
 `--intermediate_file`: Optional parameter. Whether to keep the intermediate .bam files generated in the filtering step, the default is no. e.g. **_--intermediate_file Yes_**
+
 
 **Example**
 
