@@ -127,13 +127,17 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 #### Filtering
 
-`--in_bam`: List of bam files. e.g. **_--in_bam /pathway/metagotCloudbamfiles_Batch14_Run1789_**;
+`--in_bam`: Pathway to the metagotCloud files. e.g. **_--in_bam /pathway_**;
 
 `--out_proc_bam`: Output dir for processed .bam files;
 
 `--job_filter`: Optional parameter. Number of process for filtering, the default is 5;
 
 `--intermediate_file`: Optional parameter. Whether to keep the intermediate .bam files generated in the filtering step, the default is no. e.g. **_--intermediate_file Yes_**
+
+`--batch`: The batch number, e.g. **_--batch 14_**;
+
+`--run`: The run number, e.g. **_--run 1789_**;
 
 
 **Example**
@@ -148,4 +152,7 @@ If the user prefer to run each procedure step by step and specify the output pat
 
 --intermediate_file Yes
 
+--batch 14
+
+--run 1789
 
