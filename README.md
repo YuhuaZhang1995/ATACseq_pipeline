@@ -22,6 +22,8 @@ In this case, the program will go through the whole procedure, and generate the 
 
 `##filtering`: Specify the procedure
 
+`##plotting`: Specify the procedure
+
 `--seq_data`: Pathway to the sequence data, end with Run_XXX, no '/' included at the end; the program will search for '/elder' folder and find the sequence data, **_e.g. --seq_data /pathway/to/data/Run_XXX_**
 
 `--core_info_file`: The core information files, **_e.g. /pathway/to/file/Batch14_Run_1789_elder.txt_**;
@@ -68,6 +70,8 @@ In this case, the program will go through the whole procedure, and generate the 
 --job_filter 5
 
 --intermediate_file Yes
+
+##plotting
 
 
 ## Separate each step
@@ -133,7 +137,7 @@ This step will generate the aligned .bam files as well as a metaCloudbamfiles wh
 
 This step will generate the filtered .bam file as well as the metagotCloudbamfiles which will be used in the plotting step. Whether to keep the intermediate files is up to the users.
 
-`--in_bam`: Pathway to the metagotCloud files. e.g. **_--in_bam /pathway_**;
+`--in_bam`: MetagotCloud files. e.g. **_--in_bam /pathway/metaXXXX_**;
 
 `--out_proc_bam`: Output dir for processed .bam files;
 
@@ -163,3 +167,22 @@ This step will generate the filtered .bam file as well as the metagotCloudbamfil
 
 --run 1789
 
+#### Plotting
+
+This step will generate the plots of the frequency of the insert sizes, compared the filtered reads to the unfiltered reads.
+
+`--in_bam`: MetagotCloud files. e.g. **_--in_bam /pathway/metaXXXX_**;
+
+`--in_bam_filtered`: MetagotCloud files for filtered reads. e.g. **_--in_bam /pathway/metaXXXX_**;
+
+`--out_plot`: The directory to store the generated plots;
+
+**_Example_**
+
+##plotting
+
+--in_bam /pathway/meta_file
+
+--in_bam_filtered /pathway/meta_filtered_file
+
+--out_plot /pathway/plot
