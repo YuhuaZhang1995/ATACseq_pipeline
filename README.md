@@ -18,7 +18,7 @@ In this case, the program will go through the whole procedure, and generate the 
 
 `##adapter_trimming`: Specify the procedure
 
-`##alignment**`: Specify the procedure
+`##alignment`: Specify the procedure
 
 `##filtering`: Specify the procedure
 
