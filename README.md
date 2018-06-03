@@ -139,7 +139,7 @@ This step will generate the filtered .bam file as well as the metagotCloudbamfil
 
 `--in_bam`: MetagotCloud files. e.g. **_--in_bam /pathway/metaXXXX_**;
 
-`--out_proc_bam`: Output dir for processed .bam files;
+`--out_proc_bam`: Output dir for processed .bam files; A new directory named as _BatchXX_RunXXXX_ will be created to store the processed .bam files
 
 `--batch`: The batch number, e.g. **_--batch 14_**;
 
