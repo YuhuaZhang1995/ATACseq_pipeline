@@ -97,13 +97,13 @@ This step will generate the trimmed files under the same directory as the input 
 
 - **Alignment**
 
-This step will generate the aligned .bam files as well as a metaCloudbamfiles which will be used for the filtering.
+This step will generate the aligned .bam files as well as a metaCloudbamfiles which will be used for the filtering. The .bam files will be stored in the pathway either specified by the user or by default the current disrctory. The metaCouldbamfiles will be stored in the same pathway as the config file for gotcloud.
 
 `--trimmed_file`: Pathway to the trimmed files, end with Run_XXX, no '/' included at the end; the program will search for '/elder' folder and find the sequence data;
 
 `--out_conf`: Directory to store config and index files that would be used by gotcloud;
 
-`--out_bam`: Directory to store the output bam files;
+`--out_bam`: Directory to store the output bam files. A new directory named as _BatchXX_RunXXXX_ will be created to store the generated .bam files;
 
 `--batch`: The batch number, e.g. **_--batch 14_**;
 
