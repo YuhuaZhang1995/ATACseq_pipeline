@@ -79,6 +79,8 @@ This step will generate the trimmed files under the same directory as the input 
 
 `--job_AT`: Optional parameter. Number of process for adapter trimming step, the default is 5;
 
+`--output_AT_core_info`: Optional parameter. Directory to store the generated sample info file, **_e.g. /pathway/to/store_**
+
 
 **_Example_**
 
@@ -89,6 +91,8 @@ This step will generate the trimmed files under the same directory as the input 
 --job_AT 5
 
 --seq_data /pathway/to/seq/data
+
+--output_AT_core_info /pathway/to/store
 
 
 - **Alignment**
