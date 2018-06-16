@@ -15,8 +15,8 @@ def generate_metabam(pathway):
 			col1=col1.append({'1':pathway+'/'+file},ignore_index=True)
 			tmp_file=re.sub('.bam\Z','',file)
 			col2=col2.append({'2':tmp_file},ignore_index=True)
-	col1=col1.sort(['1'])
-	col2=col2.sort(['2'])
+	#col1=col1.sort(['1'])
+	#col2=col2.sort(['2'])
 	file=pd.concat([col1,col2],axis=1)
 	return(file)
 
