@@ -1,6 +1,6 @@
  # ATACseq_pipeline
 
-This is an automatic pipeline of processing ATAC-seq data, which includes adapter-trimming, alignment, filtering, ploting, getting the coverage depth, generating .bed filea and comparing signal to noise.
+This is an automatic pipeline of processing ATAC-seq data, which includes adapter-trimming, alignment, filtering, ploting, getting the coverage depth, generating .bed filea, comparing signal to noise and summarizing all the previous stpes.
 
 ## Usage of the ATACseq_pipeline: 
 
@@ -306,3 +306,40 @@ This step will generate the plots of signal to noise;
 --batch 14
 
 --run 1789
+
+- **summary**
+
+This step will generate the summary of the quality control steps;
+
+`--dir_sampleinfo`: The directory to the sampleinfo file generated before, e.g. **_--dir_sampleinfo /pathway/..**;
+
+`--dir_proc_bam`: The directory to the processed .bam files, e.g. **_--dir_proc_bam /pathway/..**;
+
+`--dir_coverage`: The directory to the previous summary table of coverage depth, e.g. **_--dir_coverage /pathway/..**;
+
+`--dir_s2n`: The directory to the previous summary table of signal to noise, e.g. **_--dir_s2n /pathway/..**;
+
+`--out_summary`: The output directory to store the summary table, e.g. **_--out_summary /pathway/..**
+
+`--batch`: The batch number, e.g. **_--batch 14_**;
+
+`--run`: The run number, e.g. **_--run 1789_**;
+
+**_Example_**
+
+##summary
+
+--dir_sampleinfo /pathway/..
+
+--dir_proc_bam /pathway/..
+
+--dir_coverage /pathway/..
+
+--dir_s2n /pathway/..
+
+--out_summary /pathway/..
+
+--batch 14
+
+--run 1789
+
